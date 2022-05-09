@@ -2,7 +2,11 @@
   "name": "mike-react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://stitchcodes.github.io/mike-react-portfolio",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.2.0",
     "install": "^0.13.0",
@@ -12,21 +16,20 @@
     "normalize.css": "^8.0.1",
     "npm": "^8.9.0",
     "popper.js": "^1.15.0",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
     "react-typed": "^1.1.2",
-    "typed.js": "^2.0.10"
+    "typed.js": "^2.0.10",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
